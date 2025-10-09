@@ -45,10 +45,10 @@ app.use(morgan('common'));
 app.use(cors());
 
 dotenv.config();
-
+console.log(process.env.DB_URL)
 mongoose.connect(process.env.DB_URL , {useNewUrlParser : true , useUnifiedTopology : true})
-	.then(() => console.log('Mongo connection established to Vyapar App'))
-	.catch((err) => console.log(err))
+  .then(() => console.log('Mongo connection established to Vyapar App'))
+  .catch((err) => console.log(err))
 
 // askign the app to use json parsing which comes pre-bulit in expres
 app.use(express.json());
@@ -59,7 +59,7 @@ app.listen(process.env.PORT || 3001,() => console.log(`we are running on ${proce
 
 // Initialising root route
 app.get('/',(req,res) => {
-	res.end("Hello , the Vyapar app is running ... ");
+  res.end("Hello , the Vyapar app is running ... ");
 })
 // all routes
 app.use('/api/product',product);
@@ -92,7 +92,7 @@ const upload = multer({ storage: storage });
 // single file upload for main product image
 app.post("/api/upload/single", upload.single("file"), (req, res) => {
   try {
-  	console.log(req.body)
+    console.log(req.body)
     return res.status(200).json("File uploded successfully");
   } catch (error) {
     console.error(error);
@@ -112,9 +112,9 @@ app.post("/api/upload/single", upload.single("file"), (req, res) => {
 
 // delete an uploaded file
 app.post("/api/upload/delete", (req, res) => {
-	const oldPath = path.join(__dirname,"public/images",req.body.filename);
+  const oldPath = path.join(__dirname,"public/images",req.body.filename);
   try {
-  	fs.unlinkSync(oldPath)
+    fs.unlinkSync(oldPath)
     return res.status(200).json("File delete");
   } catch (error) {
     console.error(error);
