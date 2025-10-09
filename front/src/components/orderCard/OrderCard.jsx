@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function OrderCard({order}) {
   const [product, setProduct] = useState({})
-	const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+	const PF = import.meta.env.VITE_PUBLIC_FOLDER
 
   useEffect(() => {
     const fetchProduct = async() =>{

@@ -1,19 +1,55 @@
-.sellerImage{
-	border-radius: 3%;
-	border: 2px solid white;
-	max-height: 400px;
+/* Seller Image */
+.sellerImage {
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
-
-.pageSeller-title{
-	padding-bottom: 0px !important;
-
-	margin-bottom: 0px !important;
-	max-height: 50px;
-
+/* Seller Name */
+.pageSeller-title {
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  max-height: 60px;
+  overflow: hidden;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
 }
-.Recent-headline{
-	background-color: pink;
-	border-radius: 20%;
-	margin-bottom: 10px;
+
+/* Recent Products headline */
+.Recent-headline {
+  background-color: #ffc0cb;
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 12px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Info boxes: city / state / items sold */
+.pageSeller-info {
+  padding: 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+}
+
+/* Recent products wrapper */
+.recent-products {
+  padding: 12px;
+  border-radius: 14px;
+}
+
+/* Review cards */
+.review-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* General spacing helpers */
+.section-spacing {
+  padding: 16px 0;
 }

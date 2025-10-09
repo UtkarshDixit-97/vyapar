@@ -1,44 +1,41 @@
-.error-image{
-    background-image: url(../../../public/Lost Pepe.jpg);
-      background-position: center;
+.error-image {
+  background-image: url(../../../public/Lost Pepe.jpg);
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
   min-height: 80vh !important;
-
 }
 
-.lost-text{
+.lost-text {
   position: static;
   font-size: 400%;
   right: 30vh;
   top: 24vh;
-  overflow: visible ;
-  }
-  .lost-text2{
-  	display: none !important;
-  }
+  overflow: visible;
+}
+.lost-text2 {
+  display: none !important;
+}
 
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .lost-text {
     background-color: lightblue;
     color: red;
     background-image: url(../../../public/Lost Pepe.jpg);
-
   }
 
-  .error-image{
-  	display: none !important;
+  .error-image {
+    display: none !important;
   }
-  .lost-text2{
-  	display: flex !important;
+  .lost-text2 {
+    display: flex !important;
     background-image: url(../../../public/Lost Pepe.jpg);
     background-color: lightblue;
 
     color: red;
 
     align-self: center;
-  	min-height: 40vh !important;
-
+    min-height: 40vh !important;
   }
-}	
+}

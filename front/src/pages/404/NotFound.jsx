@@ -2,7 +2,7 @@ import React from 'react'
 import './notfound.css'
 
 export default function NotFound() {
-	const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+	const PF = import.meta.env.VITE_PUBLIC_FOLDER
 
 	return (
 		<div className="contanier text-center m-2 p-2 flex">

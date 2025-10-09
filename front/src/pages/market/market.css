@@ -1,11 +1,10 @@
 @media (max-width: 400px) {
-.card-market{
-	min-width: 100vw ;
-	/*display: inline-block !important;*/
-	position: relative;
-	display: flex;
-	align-self: center !important;
-	/*margin-left: -1000px !important;*/
+  .card-market {
+    min-width: 100vw;
+    /*display: inline-block !important;*/
+    position: relative;
+    display: flex;
+    align-self: center !important;
+    /*margin-left: -1000px !important;*/
+  }
 }
-
- }

@@ -1,44 +1,51 @@
 # Vyapar | व्यापार 
 
   ### LIVE URL - [https://vyapar-final.netlify.app/]
+  ## Notice - Live URL doesn't work anymore as most cloud is costly and i dont wanna waste money for live server. So netlify may still work but backend is not there
   
-  
-  This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  This project was bootstrapped with Vite
   
   <a href="https://ibb.co/5K4HdPG"><img src="https://i.ibb.co/DrW2NZz/Screenshot-2022-02-16-at-23-25-09-Vyapar.png" alt="Screenshot-2022-02-16-at-23-25-09-Vyapar" border="0" /></a>
   
 
-## Available Scripts
+## Setup instruction - for backend
+
+In the project directory, open 'api' folder :
+
+NOTE - The env variables are right now pushed cause local setup doesn't really hold anything secret, you just need to edit out your mongo db url for local machine
+### `npm i`
+Install the necessary dependency
+
+### `node seed.js`
+This seeds the db with some data so you can use the app
+
+### 'npm start'
+Runs the app in the development mode.
+
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+
+## Setup instruction - for frontend
 
 
+### `npm i`
+Install the necessary dependency
 
-In the project directory, you can run:
-
-
-
-### `npm start`
-
-Runs the app in the development mode.\
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `npm run dev`
+Run the app
 
 ### `npm run build`
+Open [http://localhost:3002](http://localhost:3002) to view it in your browser.
 
+## Optional
 Builds the app for production to the `build` folder.\
 
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 
 
-### `npm i`
-
-install dependencies
-
-
-
 ## FOLDER STRUCTURE
 
-### API 
+### API
 
   --- contains backend hosted on heroku having http://vyappar.openode.dev/ as backend
 
@@ -64,7 +71,7 @@ install dependencies
 
   --- congtains front end of my app https://vyapar-final.netlify.app/
 
-others
+
 
 
 

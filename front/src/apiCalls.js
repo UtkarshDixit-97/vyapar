@@ -10,9 +10,12 @@ export const loginCall = async (userCredential, dispatch) => {
     res.data["isSeller"]=false
 
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    return res.data;
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
     alert("TRY AGAIN")
+    return res.data;
+
   }
 };
 
@@ -35,9 +38,12 @@ export const sellerLogin = async (userCredential, dispatch) => {
     res.data["isSeller"]=true
 
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    return res.data;
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
     alert("TRY AGAIN")
+    return res.data;
+
   }
 };
 
@@ -51,6 +57,7 @@ export const loginCallAfterEdit = async (userCredential, dispatch) => {
     res.data["isSeller"]=false
 
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    return res.data;
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
     alert("TRY AGAIN")
@@ -69,6 +76,7 @@ export const sellerLoginAfterEdit = async (userCredential, dispatch) => {
     res.data["isSeller"]=true
 
     dispatch({ type: "LOGIN_SUCCESS", payload: res.data });
+    return res.data;
   } catch (err) {
     dispatch({ type: "LOGIN_FAILURE", payload: err });
     alert("TRY AGAIN")

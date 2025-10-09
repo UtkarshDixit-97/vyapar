@@ -6,8 +6,7 @@ import axios from 'axios'
 
 
 export default function homeRecentCard({product,passIdToHome}) {
-	const PF = process.env.REACT_APP_PUBLIC_FOLDER
-
+	const PF = import.meta.env.VITE_PUBLIC_FOLDER
 
 	return (
 		<div className="card mx-1 border-danger justify-content-center card-market" onClick={()=>passIdToHome(product._id)} >

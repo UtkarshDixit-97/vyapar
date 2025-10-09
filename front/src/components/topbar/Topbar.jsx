@@ -17,7 +17,7 @@ export default function Topbar() {
   const {user} = useContext(AuthContext);
   const navigate = useNavigate();
   const {dispatch} = useContext(AuthContext);
-  const PF = process.env.REACT_APP_PUBLIC_FOLDER
+  const PF = import.meta.env.VITE_PUBLIC_FOLDER
   const [cart,setCart] = useState({
     product_list:[]
   });
@@ -25,7 +25,7 @@ export default function Topbar() {
 useEffect(() => {
   const fetchCart = async () =>{
     const res = await axios.get('/cart/'+user.cart_id)
-    await setCart(res.data)
+    setCart(res.data)
   }
   if (user && user.isSeller === false){
     fetchCart();
@@ -115,7 +115,7 @@ useEffect(() => {
 					Vyapar | व्यापार
     			</a>
     			<form className="d-flex search ol-sm-4" onSubmit={submitHandler} >
-        			<input className="form-control me-2 mr-auto" type="search" ref={searchquery} placeHolder="Search" aria-label="Search" />
+        			<input className="form-control me-2 mr-auto" type="search" ref={searchquery} placeholder="Search" aria-label="Search" />
         				<button className="btn btn-warning" type="submit">Search</button>
       			</form>
       		<button className="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,7 +128,7 @@ useEffect(() => {
     				      <a className=" nav-link topbarRightItem" onClick={aboutPageNav} >About</a>
     				    </li>
                 <li className="nav-item ms-auto ">
-                  <a className=" nav-link topbarRightItem" onClick={aboutPageNav} onClick={fromTopBarToMarket} ><Storefront style={{fontSize: '32px'}}/></a>
+                  <a className=" nav-link topbarRightItem" onClick={fromTopBarToMarket} ><Storefront style={{fontSize: '32px'}}/></a>
                 </li>
 
                 {(user && user.isSeller === true) ? 

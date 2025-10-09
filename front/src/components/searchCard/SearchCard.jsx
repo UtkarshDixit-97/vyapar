@@ -6,7 +6,7 @@ export default function SearchCard({result}) {
 	// console.log("i am in search car")
 	// console.log(result)
 	const navigate = useNavigate();
-	const PF = process.env.REACT_APP_PUBLIC_FOLDER
+	const PF =  import.meta.env.VITE_PUBLIC_FOLDER
 
 	// Showing other images of the product 
 	const ExtraImages = ({imgName}) => {

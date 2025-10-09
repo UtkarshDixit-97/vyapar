@@ -11,7 +11,7 @@ export default function Review({review,index}) {
 	const [editLoading, setEditLoading] = useState(false);
 	const [deleteloading, setDeleteLoading] = useState(false)
 
-	const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+	const PF = import.meta.env.VITE_PUBLIC_FOLDER
 	const [productName, setProductName] = useState('')
 	const [sellerName, setSellerName] = useState('')
 	useEffect(() => {

@@ -6,3 +6,15 @@ p.footer-text{
 	font-size: 20px;
 	font-weight: 200px;
 }
+
+.footer {
+  position: fixed;   /* stick to bottom */
+  bottom: 0;         /* at the bottom of the viewport */
+  left: 0;           /* align to left */
+  width: 100%;       /* full width */
+  background-color: #198754; /* same as bg-success */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  z-index: 1000;     /* make sure it stays above content */
+}
