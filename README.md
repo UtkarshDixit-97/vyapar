@@ -47,7 +47,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### API
 
-  --- contains backend hosted on heroku having http://vyappar.openode.dev/ as backend
+  --- contains backend hosted on cloud having http://vyappar.openode.dev/ as backend [This business has shut down, so no longer available]
 
   #### lib -
 
